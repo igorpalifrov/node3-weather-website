@@ -7,9 +7,8 @@ const forecast = (latitude, longitude, callback) => {
         if(error) {
            callback('Unable to connect ')
          } else {
-             callback (undefined, body.current.temperature + ' degrees out')
+             callback (undefined, body.current.temperature + ' degrees out. The humidity is '+ body.current.humidity +'.') 
          }
-
     })
  }
 
